@@ -394,6 +394,8 @@ if (FMT_MASTER_PROJECT AND EXISTS ${gitignore})
 endif ()
 else()
 idf_component_register(
+    SRCS
+        src/format.cc
     INCLUDE_DIRS
         include
 )
