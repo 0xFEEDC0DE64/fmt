@@ -1,1 +1,1 @@
-INCLUDEPATH += $$PWD/include
+QMAKE_CXXFLAGS += -isystem $$PWD/include
