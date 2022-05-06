@@ -1,4 +1,4 @@
-if(NOT IDF_TARGET STREQUAL "esp32")
+if(NOT DEFINED IDF_TARGET)
 cmake_minimum_required(VERSION 3.1...3.18)
 
 # Fallback for using newer policies on CMake <3.12.
