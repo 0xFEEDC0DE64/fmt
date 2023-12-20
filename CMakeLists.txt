@@ -400,4 +400,9 @@ idf_component_register(
         include
 )
 set_property(TARGET ${COMPONENT_LIB} PROPERTY CXX_STANDARD 23)
+target_compile_options(${COMPONENT_TARGET}
+    PRIVATE
+        -Wno-array-bounds
+        -Wno-stringop-overflow
+)
 endif()
